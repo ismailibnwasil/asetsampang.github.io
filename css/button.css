@@ -1,0 +1,98 @@
+/* From uiverse.io by @Mike11jr */
+
+.scene {
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    color: #ccc;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.85s cubic-bezier(.17, .67, .14, .93);
+    transform-style: preserve-3d;
+    transform-origin: 100% 50%;
+    width: 10em;
+    height: 4em;
+}
+
+.cube:hover {
+    transform: rotateX(-90deg);
+}
+
+.sidetop {
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    font-weight: bold;
+}
+
+.side {
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-weight: bold;
+}
+
+.top {
+    background: #f8f673;
+    color: #222229;
+    transform: rotateX(90deg) translate3d(0, 0, 2em);
+    box-shadow: inset 0 0 0 5px #ffffff;
+}
+
+.front {
+    background: #4ff5b0;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 0 5px #ffffff;
+    transform: translate3d(0, 0, 2em);
+}
+
+
+/* dropdown button */
+
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mainmenubtn:hover {
+    background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-child {
+    display: block;
+}
